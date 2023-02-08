@@ -23,6 +23,7 @@ export class AppController {
     if (!alkalmazott.kezdoDatum) {
       alkalmazott.kezdoDatum = new Date();
     }
+    
     alkalmazottRepo.save(alkalmazott);
     return alkalmazott;
   }

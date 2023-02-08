@@ -7,10 +7,20 @@ export default class Alkalmazott {
     id: number;
 
     @Column()
-    kezdoDatum: Date;
+    fullName: string;
 
     @Exclude()
     @Column()
+    password: string;
+
+    @Column( { default: 0 } )
+    beosztottakSzama: number;
+
+    @Column()
+    kezdoDatum: Date;
+
+    @Exclude()
+    @Column( { default: 0 } )
     haviBer: number;
 
     @Column()
